@@ -14,6 +14,7 @@ namespace GenericBot.CommandModules
 
             Command giveaway = new Command("giveaway");
             giveaway.Usage = "giveaway [create <description>|join <id>|close <id>|roll <id>|list]";
+            giveaway.Description = "Creates a giveaway for the community to partake in";
             giveaway.ToExecute += async (context) =>
             {
                 if (context.Parameters.Count == 0)
